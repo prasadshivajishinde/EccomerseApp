@@ -1,16 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+import About from './About'
+import Navbar from './Navbar'
+import Home  from './Home'
+import Service from './Service'
 
-function App() {
+
+
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-       <img src="images/logo.png" alt="" />
+    <>
+      <Router>
+        <Navbar/>
+        <Routes>
+        <Route path='/' element={<About/>}></Route>
+        <Route path='/service' element={<Service/>}></Route>
+        <Route path='/about' element={<Home/>}></Route>
 
-       <h1>hello</h1>
-      </header>
-    </div>
-  );
+
+        </Routes>
+      </Router>
+    </>
+  )
 }
 
-export default App;
+export default App

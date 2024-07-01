@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light">
   <div class="container-fluid">
     <NavLink to="/" class="navbar-brand nav-link"  >
         <img src="./images/logo3.png" alt="" height="50px"/>

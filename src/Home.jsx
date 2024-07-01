@@ -1,5 +1,52 @@
 import React from "react";
 import './App.css'
+import Show from "./Show";
+const data=[
+    {
+        id:1,
+        img:'images/iphone.webp',
+        desc:'Apple iPhone 15 (Blue, 128 GB)'
+    },
+    {
+        id:2,
+        img:'images/poco.webp',
+        desc:'POCOC61(Ethereal Blue,64GB)'
+    },
+    {
+        id:'3',
+        img:'./images/realme.webp',
+        desc:'Realme 12x 5G (Twilight Purple, 128 GB)(6 GB RAM)'
+    },
+
+    {
+        id:'4',
+        img:'./images/vivo.webp',
+        desc:'Vivo T2 Pro 5G (New Moon Black, 256 GB)(8 GB RAM)'
+    },
+    
+    {
+        id:'5',
+        img:'./images/redmi.webp',
+        desc:'REDMI Note 13 5G (Stealth Black, 256 GB)'
+    },
+    {
+        id:'6',
+        img:'./images/moto.webp',
+        desc:'Motorola Edge 50 Fusion( Blue,8GB RAM)'
+    },
+    {
+        id:'7',
+        img:'./images/samsung.webp',
+        desc:'SAMSUNG Galaxy S23 Ultra5G(Cream, 256 GB)'
+    },
+    {
+        id:'8',
+        img:'./images/oneplus.webp',
+        desc:'OnePlus 12 (Flowy Emerald,12GB RAM, 256GB Storage)'
+    }
+    
+    
+]
 const home=()=>{
 return(
 <>
@@ -47,6 +94,34 @@ return(
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+    </div>
+
+
+    <div className="container mt-5">
+        <div className="row">
+            <div className="col-md-12">
+            <h2 className="text-center">TRENDY PRODUCTS</h2>
+            </div>
+        </div>
+
+        <div className="row">
+            {
+                data.map((v)=>{
+                    return(
+
+                        <div className="col-lg-3 col-md-6 my-3">
+                          <Show
+                           img={v.img}
+                           desc={v.desc}
+                          />
+                        </div>  
+                    )
+                })
+            }
+        </div>
+        
+
+
     </div>
 </>
 )

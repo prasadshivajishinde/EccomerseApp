@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 import { MdAccountCircle } from "react-icons/md";
 import { FaCartPlus } from "react-icons/fa6";
-
+import { CartContext } from './Context/ContextProvider';
 const Navbar = () => {
+  const {cart} = useContext(CartContext)
   return (
     <div>
 
@@ -30,14 +31,14 @@ const Navbar = () => {
         </li>
 
         <li class="nav-item">
-        <NavLink to="/login" className="nav-link fw-bold">
+        <NavLink to="/account" className="nav-link fw-bold">
         <MdAccountCircle   style={{fontSize:'28px'}}/> Account  </NavLink>
         </li>
 
 
         <li class="nav-item">
         <NavLink to="/cart" className="nav-link fw-bold">
-        <FaCartPlus   style={{fontSize:'20px'}}/> Cart  </NavLink>
+        <FaCartPlus style={{fontSize:'20px'}}/>{cart.length} Cart  </NavLink>
         </li>
 
        

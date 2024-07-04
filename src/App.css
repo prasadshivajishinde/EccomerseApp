@@ -1,9 +1,28 @@
-.card {
+#homecard{
     transition: transform 0.3s ease, filter 0.3s ease;
   }
   
-  .card:hover {
+  #homecard:hover {
     transform: scale(1.05);
     filter: brightness(40%);
     color: red;
+  }
+
+  #logo{
+    height: 200px;
+    width: 100%;
+    background: url('../public/images/shop.jpg') no-repeat center center/cover; 
+  }
+
+  .text{
+   margin-left: 200px;
+   position: relative;
+   top:30px
+
+  }
+
+  .bt{
+    width: 150px;
+    margin: 5px;
+
   }

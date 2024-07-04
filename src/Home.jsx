@@ -100,7 +100,7 @@ return(
     <div className="container mt-5">
         <div className="row">
             <div className="col-md-12">
-            <h2 className="text-center">TRENDY PRODUCTS</h2>
+            <h2 className="text-center " style={{fontFamily:'small-caps'}}>TRENDING PRODUCTS</h2>
             </div>
         </div>
 

@@ -4,7 +4,7 @@ const Show = (props) => {
   return (
     <div>
    <div className="container">
-    <div className="card " style={{maxWidth:'250px'}}>
+    <div className="card " style={{maxWidth:'250px'}} id="homecard">
         {/* <div className="card-header">
 
         </div> */}

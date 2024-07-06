@@ -17,7 +17,7 @@ const Navigatepage=()=>{
           <div className="row">
           { cart.length === 0 ? (
             <div className="col-md-12 text-center my-3">
-              <h2 className='text-danger fw-bold'>Cart is Empty</h2>
+              <h2 className='text-danger fw-bold'>Your Cart is Empty</h2>
               <button className='btn btn-info text-dark'onClick={Navigatepage} >Continue Shopping</button>
             </div>
           ):
@@ -28,7 +28,7 @@ const Navigatepage=()=>{
       ))}
           
             <div className="col-md-4">
-  <h1></h1>
+            
             </div>
            </div>
        </div>

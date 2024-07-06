@@ -11,19 +11,20 @@ export const CartShow = ({product}) => {
 
   return (
     <>
-    <div className="card " style={{maxWidth:'250px'}} >
+    <div className="card " style={{maxWidth:'255px'}} >
         {/* <div className="card-header">
 
         </div> */}
-        <div className="card-body text-center">
+        <div className="card-body text-center" style={{maxHeight:'274px'}}>
      <img src={product.img} alt="" height="180px" />
-       <h6>Price:{product.price}</h6>
-     
+     <h6 style={{fontSize:'15px'}}>{product.desc}</h6>
+        { <h6>Price:{product.price}</h6>} 
+   
         </div>
-        <div className="card-footer text-center" style={{maxHeight:'70px'}}>
-        <h6 style={{fontSize:'15px'}}>{product.desc}</h6>
+        <div className="card-footer text-center" style={{maxHeight:'80px'}}>
+      
         {/* <button onClick={() => dispatch({type:'Remove', id:product.id})}>Remove</button> */}
-        <button onClick={handleRemove}>Remove</button>
+        <button onClick={handleRemove} className='btn btn-danger'>Remove</button>
        
 
         </div>

@@ -3,7 +3,7 @@ import iphonedata from './iphonedata.js';
 import Redmidata from './Redmidata.js'
 // import motoroladata from './motoroladata';
 // import pocodata from './pocodata';
-// import oneplusdata from './oneplusdata';
+ import oneplusdata from './oneplusdata.js';
 import Mobileshow from './Mobileshow';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -61,11 +61,11 @@ export default class MobileComponent extends Component {
               <h5 className="text-dark">Select Categories</h5>
             </div>
             <div className="col-lg-12 col-md-12">
-              <button className="btn btn-primary mx-3 my-3 fw-bold bt" onClick={() => this.setData(iphonedata)}>Iphone</button>
-              <button className="btn btn-primary mx-3 my-3 fw-bold bt" onClick={() => this.setData()}>Motorola</button>
-              <button className="btn btn-primary mx-3 my-3 fw-bold bt" onClick={() => this.setData()}>Poco</button>
-              <button className="btn btn-primary mx-3 my-3 fw-bold bt" onClick={() => this.setData(Redmidata)}>Redmi</button>
-              <button className="btn btn-primary mx-3 my-3 fw-bold bt" onClick={() => this.setData()}>One Plus</button>
+              <button className="btn btn-info  mx-3 my-3 fw-bold bt" onClick={() => this.setData(iphonedata)}>Iphone</button>
+              <button className="btn btn-info  mx-3 my-3 fw-bold bt" onClick={() => this.setData()}>Motorola</button>
+              <button className="btn btn-info  mx-3 my-3 fw-bold bt" onClick={() => this.setData()}>Poco</button>
+              <button className="btn btn-info  mx-3 my-3 fw-bold bt" onClick={() => this.setData(Redmidata)}>Redmi</button>
+              <button className="btn btn-info  mx-3 my-3 fw-bold bt" onClick={() => this.setData(oneplusdata)}>One Plus</button>
             </div>
           </div>
 
@@ -78,7 +78,7 @@ export default class MobileComponent extends Component {
                     img={v.img}
                     desc={v.desc}
                     price={v.price}
-            
+                   
 
                   />
                 </div>

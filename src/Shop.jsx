@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import iphonedata from './iphonedata.js'
 import Mobileshow from './Mobileshow'
 import Shop1 from './Shop1'
-import Shop2 from './Shop2.jsx'
+
 export default class  extends Component {
 
   constructor()

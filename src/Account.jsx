@@ -1,9 +1,14 @@
 import React from 'react'
+import SignUp from './Accountdetails/SignUp'
+
 
 const Account = () => {
   return (
     <div>
-        <h1>Account Login ....</h1>
+      <div className="container">
+       <SignUp/> 
+      </div>
+     
     </div>
   )
 }

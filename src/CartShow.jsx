@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import { CartContext } from './Context/ContextProvider'
 export const CartShow = ({product}) => {
-
     const {dispatch} = useContext(CartContext)
 
   const handleRemove = () => {
@@ -11,7 +10,7 @@ export const CartShow = ({product}) => {
 
   return (
     <>
-    <div className="card " style={{maxWidth:'255px'}} >
+    <div className="card my-3 " style={{maxWidth:'255px'}} >
         {/* <div className="card-header">
 
         </div> */}
@@ -33,3 +32,5 @@ export const CartShow = ({product}) => {
     </>
   )
 }
+
+

@@ -4,8 +4,14 @@ import Show from "./Show";
 const data=[
     {
         id:1,
-        img:'images/iphone.webp',
-        desc:'Apple iPhone 15 (Blue, 128 GB)'
+        img:'../images/iphone.webp',
+        desc:'Apple iPhone 15 (Blue, 128 GB)',
+        price:70999,
+        details:[
+            "128 GB ROM || ",
+           " 15.49 cm (6.1 inch) Super Retina XDR Display || ",
+            "48MP + 12MP | 12MP Front Camera || ",
+           " A16 Bionic Chip, 6 Core Processor Processor"]
     },
     {
         id:2,
@@ -111,8 +117,11 @@ return(
 
                         <div className="col-lg-3 col-md-6 my-3">
                           <Show
+                          id= {v.id}
                            img={v.img}
                            desc={v.desc}
+                           price={v.price}
+                           details={v.details}
                           />
                         </div>  
                     )

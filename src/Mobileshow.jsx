@@ -1,34 +1,43 @@
 import React, { useContext } from 'react'
 import { CartContext } from './Context/ContextProvider';
 import {useNavigate}  from 'react-router-dom'
-const Mobileshow = ({ id,img, price, desc }) => {
-  const { dispatch } = useContext(CartContext);
-  const {cart} = useContext(CartContext)
-
-    const product = { img, price, desc,id }
+const Mobileshow = ({ id,img, price, desc,details,offers }) => {
+  const { dispatch,cart } = useContext(CartContext);
+  
+  //destructure all data 
+    const product = { img, price, desc,id,details,offers}
 
     const nav= useNavigate()
 
+    //Add to cart logic
     const handleAddtoCart=()=>{
       dispatch({type:'Add',product})
       nav('/cart')
     }
 
+    //here we passing id with whole state object 
+    const handleNav=()=>{
+      nav(`/quickview/${id}`,{ state: { product } })
+    }
+
      const isInCart = cart.find(item => item.id === id);
   
+    
+   
 
   return (
     <div>
 <div className="container">
-    <div className="card " style={{maxWidth:'250px'}}>
+    <div className="card " style={{maxWidth:'250px'}}  >
          {/* <div className="card-header bg-light">
 
         </div>  */}
-        <div className="card-body text-center" style={{maxHeight:'290px'}}>
-        <img src={img} alt="" height="180px" />
+        <div className="card-body text-center" style={{maxHeight:'290px'}} id="quickview"
+         onClick={handleNav}>
+        <img src={product.img} alt="" height="180px"  /> 
 
         <h6 style={{fontSize:'15px'}}>{desc}</h6>
-        <p> Price:{price}</p>
+        <p> Price:{product.price}</p>
     
         </div>
         <div className="card-footer text-center" >

@@ -11,9 +11,9 @@ export default class MobileComponent extends Component {
   constructor() {
     super();
     this.state = {
-      currentData: Redmidata,
+      currentData: iphonedata,
       currentPage: 1,
-      itemsPerPage: 4,
+      itemsPerPage: 6,
     };
   }
 
@@ -78,6 +78,8 @@ export default class MobileComponent extends Component {
                     img={v.img}
                     desc={v.desc}
                     price={v.price}
+                    details={v.details}
+                    offers={v.offers}
                    
 
                   />

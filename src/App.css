@@ -6,6 +6,7 @@
     transform: scale(1.05);
     filter: brightness(40%);
     color: red;
+    cursor: pointer;
   }
 
   #logo{
@@ -26,3 +27,17 @@
     margin: 5px;
 
   }
+
+  #quickview{
+    cursor: pointer;
+   
+
+  }
+  
+  #quickview:hover{
+    color: blue;
+  }
+ 
+
+
+ 

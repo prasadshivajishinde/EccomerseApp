@@ -1,0 +1,17 @@
+
+    .fixed-summary {
+      position: sticky;
+      top: 90px;
+      width: 100%;
+      padding: 20px;
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 992px) {
+      .fixed-summary {
+        position: static;
+        margin-top: 20px;
+      }
+    }

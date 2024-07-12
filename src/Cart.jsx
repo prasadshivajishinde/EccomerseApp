@@ -58,6 +58,7 @@ import { useNavigate } from 'react-router-dom';
 import { totalPrice } from './Context/CartReducer';
 import { FaRupeeSign } from "react-icons/fa";
 import './cartstyle.css'
+import Footer from './Footer';
 
 const Cart = () => {
   const nav = useNavigate();
@@ -67,6 +68,9 @@ const Cart = () => {
     nav('/shop');
   };
 
+  const formatPrice = (price) => {
+    return new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR' }).format(price);
+  };
   return (
     <>
       <div className="container mt-4">
@@ -91,15 +95,16 @@ const Cart = () => {
             </div>
             <div className="col-lg-4">
               <div className="order-summary fixed-summary">
-                <h5 className="section-header">Order Summary</h5>
+                <h5 className="section-header text-danger">Order Summary</h5>
                 <h6>Total Items: {cart.length}</h6>
                 {/* <h6>Total Price: ${cart.reduce((total, item) => total + item.price, 0).toFixed(2)}</h6> */}
-                <h6>Total Price:<FaRupeeSign /> {totalPrice(cart)} </h6>
+                <h6>Total Price:<FaRupeeSign /> {formatPrice(totalPrice(cart))}</h6>
                 <button className="btn btn-success mt-3 w-100">Proceed to Checkout</button>
               </div>
             </div>
           </div>
         )}
+        
       </div>
 
      

@@ -83,7 +83,8 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark text-light">
         <div className="container-fluid">
           <NavLink to="/" className="navbar-brand nav-link">
-            <img src="./images/logo3.png" alt="" height="50px" />
+            {/* <img src="./images/logo3.png" alt="" height="50px" /> */}
+            <h4>MobileMart</h4>
           </NavLink>
           <button
             className="navbar-toggler"

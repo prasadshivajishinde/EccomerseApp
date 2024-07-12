@@ -8,6 +8,7 @@ import Cart from './Cart'
 import Quickview from './Quickview'
 import Login from './Accountdetails/Login'
 import { AuthProvider } from './Context/AuthProvider'
+import Footer from './Footer'
 
 
 
@@ -28,8 +29,8 @@ const App = () => {
 
         </Routes>
         </AuthProvider>
+    
       </Router>
-      
     </>
   )
 }

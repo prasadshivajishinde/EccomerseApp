@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import iphonedata from './iphonedata.js';
 import Redmidata from './Redmidata.js'
-// import motoroladata from './motoroladata';
-// import pocodata from './pocodata';
+ import Motoroladata from './motoroladata.js';
+import Pocodata from './Pocodata.js';
  import oneplusdata from './oneplusdata.js';
 import Mobileshow from './Mobileshow';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './Footer.jsx';
 
 export default class MobileComponent extends Component {
   constructor() {
@@ -60,10 +61,10 @@ export default class MobileComponent extends Component {
             <div className="col-md-12">
               <h5 className="text-dark">Select Categories</h5>
             </div>
-            <div className="col-lg-12 col-md-12">
+            <div className="col-md-12 col-sm-6">
               <button className="btn btn-info  mx-3 my-3 fw-bold bt" onClick={() => this.setData(iphonedata)}>Iphone</button>
-              <button className="btn btn-info  mx-3 my-3 fw-bold bt" onClick={() => this.setData()}>Motorola</button>
-              <button className="btn btn-info  mx-3 my-3 fw-bold bt" onClick={() => this.setData()}>Poco</button>
+              <button className="btn btn-info  mx-3 my-3 fw-bold bt" onClick={() => this.setData(Motoroladata)}>Motorola</button>
+              <button className="btn btn-info  mx-3 my-3 fw-bold bt" onClick={() => this.setData(Pocodata)}>Poco</button>
               <button className="btn btn-info  mx-3 my-3 fw-bold bt" onClick={() => this.setData(Redmidata)}>Redmi</button>
               <button className="btn btn-info  mx-3 my-3 fw-bold bt" onClick={() => this.setData(oneplusdata)}>One Plus</button>
             </div>
@@ -100,7 +101,10 @@ export default class MobileComponent extends Component {
             </ul>
           </nav>
         </div>
+      
+
       </div>
+      
     );
   }
 }

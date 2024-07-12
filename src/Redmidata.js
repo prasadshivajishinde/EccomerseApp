@@ -10,13 +10,6 @@ const Redmidata=[
         "50MP Rear Camera | 5MP Front Camera",
         "5000 mAh Battery",
         "Mediatek Dimensity 6100+ Processor"
-      ],
-      offers: [
-        "5% Cashback on Flipkart Axis Bank CardT&C",
-        "Get extra ₹3500 off (price inclusive of cashback/coupon)T&C",
-        "Flat ₹1000 off on Cleartrip hotels booking along with 300 supercoins on bookingT&C",
-        "Sign-up for Flipkart Pay Later & get free Times Prime Benefits worth ₹20,000*Know More",
-        "EMI starting from ₹370/monthView Plans"
       ]
     },
     {

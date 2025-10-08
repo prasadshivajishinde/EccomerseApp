@@ -60,6 +60,7 @@ import { FaRupeeSign } from "react-icons/fa";
 import './cartstyle.css'
 import Footer from './Footer';
 
+
 const Cart = () => {
   const nav = useNavigate();
   const { cart } = useContext(CartContext);
